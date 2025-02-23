@@ -30,12 +30,19 @@ body nav {
 }
 
 #block2 {
+  position: relative;
   gap: 3.5%;
 }
 @media (max-width: 1300px) {
   #block2 {
     gap: 4%;
   }
+}
+#block2 #block2Sign {
+  position: absolute;
+  top: -100px;
+  opacity: 0;
+  left: 0;
 }
 #block2 .block2child {
   width: 31%;

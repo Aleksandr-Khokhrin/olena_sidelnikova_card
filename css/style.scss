@@ -34,9 +34,16 @@ body {
   }
 }
 #block2 {
+  position: relative;
   gap: 3.5%;
   @media (max-width: 1300px) {
     gap: 4%;
+  }
+  #block2Sign {
+    position: absolute;
+    top: -100px;
+    opacity: 0;
+    left: 0;
   }
   .block2child {
     width: 31%;
