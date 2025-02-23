@@ -13,14 +13,16 @@
     <link rel="stylesheet" href="./css/style.css" />
     <!-- Подключаем стили Tailwind CSS через CDN (если еще не подключены) -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./js/script.js" defer></script>
   </head>
   <body>
     <nav
       class="bg-gray-100 border-gray-300 dark:bg-gray-100 fixed top-0 w-[100vw]"
+      id="fixed-element"
     >
-      <div class="py-4 mx-[5vw] md:mx-[15vw]">
+      <div class="py-4 max-w-[1000px] mx-[5vw] lg:mx-auto">
         <div
-          class="flex flex-wrap gap-2 flex-row-reverse md:flex-row justify-between items-center md:justify-between max-w-[1000px] mx-auto"
+          class="flex flex-wrap gap-2 flex-row-reverse md:flex-row justify-between items-center md:justify-between"
         >
           <a
             href="#"
@@ -90,10 +92,10 @@
       </div>
     </nav>
 
-    <main class="flex flex-col my-[15vh] mb:my-[20vh]">
+    <main class="flex flex-col my-[20vh] lg:my-[15vh]">
       <section
         id="block1"
-        class="flex flex-col md:flex-row gap-5 rounded-lg p-5 max-w-[1000px] bgForBlock mx-[5vw] md:mx-auto"
+        class="flex flex-col md:flex-row gap-5 rounded-lg p-5 max-w-[1000px] bgForBlock mx-[5vw] lg:mx-auto"
       >
         <div
           class="flex flex-col justify-center gap-5 md:gap-10 w-[100%] md:w-[50%]"
@@ -126,7 +128,7 @@
         <div class="flex flex-col items-center">
           <h3 class="text-4xl text-center mb-5">Послуги</h3>
           <div
-            class="flex justify-around flex-wrap gap-5 max-w-[1000px] mx-[5vw] md:mx-auto"
+            class="flex justify-around flex-wrap gap-5 max-w-[1000px] mx-[5vw] lg:mx-auto"
           >
             <div
               class="bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-100 dark:border-gray-300 block2child"
@@ -492,7 +494,7 @@
       </section>
       <section id="block3" class="pt-[15vh]">
         <div
-          class="flex flex-col md:flex-row gap-5 rounded-lg p-5 max-w-[1000px] mx-[5vw] md:mx-auto bgForBlock"
+          class="flex flex-col md:flex-row gap-5 rounded-lg p-5 max-w-[1000px] mx-[5vw] lg:mx-auto bgForBlock"
         >
           <div
             class="w-[100%] md:w-[50%] flex flex-col justify-center items-center"
@@ -522,7 +524,7 @@
       </section>
       <section id="block4" class="pt-[15vh]">
         <div
-          class="flex flex-col gap-5 rounded-lg p-5 max-w-[1000px] mx-[5vw] md:mx-auto bgForBlock"
+          class="flex flex-col gap-5 rounded-lg p-5 max-w-[1000px] mx-[5vw] lg:mx-auto bgForBlock"
         >
           <h3 class="text-4xl text-center">Освіта і досвід</h3>
           <div class="flex flex-col lg:flex-row md:justify-between gap-5">
@@ -573,7 +575,7 @@
       </section>
       <section
         id="block5"
-        class="flex flex-col pt-[15vh] items-center gap-5 rounded-lg p-5 max-w-[1000px] mx-[5vw] md:mx-auto"
+        class="flex flex-col pt-[15vh] items-center gap-5 rounded-lg p-5 max-w-[1000px] mx-[5vw] lg:mx-auto"
       >
         <h3 class="text-3xl">Мої контакти</h3>
         <div
